@@ -6,8 +6,8 @@ Lab4
 ========================================================================
 
     
-Formatting Saved TicTacToe Games: Our Approach
-	Our approach for saving a TicTacToe game creates a file that follows this format:
+Formatting Saved TicTacToe Games: 
+	My approach for saving a TicTacToe game creates a file that follows this format:
   
   -----------
   tictactoe
