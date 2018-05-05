@@ -1,23 +1,10 @@
 Name:Zach Perlman  444313
-Name:AB Brooks     441827
 Lab4
 12/7/2017
 ========================================================================
                                 LAB4
 ========================================================================
-Division of Labor:
-	Part II: Game Lifecycle Management:
-    Using our corrected Lab3 assignment as a foundation for this lab,
-    we both split the work evenly to alter our GameBase, TicTacToe
-    and Gomoku classes to fit the requirements of Part II. 
-  Part III: Saving and Restoring a Game:
-		AB worked on the quit prompts and save/restore framework and Zach 
-    worked on restoring the TicTacToe & Gomuku games from a well-formatted 
-    state of our choosing.
-  Part IV: Adding a Sudoku Game:
-		AB created the Sudoku game files, designed a save/restore framework for
-    Sudoku, and built a board and container of 81 pieces. Zach debugged the 
-    Sudoku game, bringing it to a working state and fixing ALL ERRORS!
+
     
 Formatting Saved TicTacToe Games: Our Approach
 	Our approach for saving a TicTacToe game creates a file that follows this format:
@@ -47,7 +34,7 @@ Formatting Saved TicTacToe Games: Our Approach
   -----------
 
 Formatting Saved Gomoku Games: Our Approach
-  Our approach for saving a Gomoku game creates a file that follows this format:
+  My approach for saving a Gomoku game creates a file that follows this format:
   
   -----------
   gomoku
@@ -72,7 +59,7 @@ Formatting Saved Gomoku Games: Our Approach
   -----------
   
 Formatting Saved Sudoku Games: Our Approach
-	Our approach for saving a Sudoku game creates a file that follows this 
+	My approach for saving a Sudoku game creates a file that follows this 
   format:
   
   -----------------
@@ -108,29 +95,29 @@ Formatting Saved Sudoku Games: Our Approach
   5 3 0 0 7 0 0   0   0
   ------------------------
   
-  As you can see, our approach standardizes the white-space separation to one
+  As you can see, my approach standardizes the white-space separation to one
   space between each character, and a new line between each row.
   
 Documenting Copy Control Design Decisions:
-  We chose not to use a copy constructor, move constructor, copy-assignment operator, 
+  I chose not to use a copy constructor, move constructor, copy-assignment operator, 
   move-assignment operator, or destructor in any of our classes since they were not needed 
   for the functionality we desired, and the destructor was implicit in the shared_ptr.
 
 cases:
 
-We tested several cases with all 3 games, including:
+I tested several cases with all 3 games, including:
 	+poorly formatted inputs
   +quitting the game at random times
   +saving a game, then quitting and loading
   +loading a saved game, then saving again and loading again
   +playing a game all the way through
   
-With Sudoku in particular, we also tested:
+With Sudoku in particular, I also tested:
 	+Winning the game in various ways, using...
   +our own creadted sudoku0 files with easy solutions
   +poorly formatted sudoku0 files
   
-Everything worked well in all of our test cases.
+Everything worked well in all of the test cases.
 
 
 
